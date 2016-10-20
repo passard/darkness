@@ -1,0 +1,91 @@
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+// Toxic green theme
+// Based on "Base16 Tomorrow Dark" theme (MIT License): https://github.com/atom/base16-tomorrow-dark-theme
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+
+@import "common.scss";
+
+// Grayscale
+$black:           #111111;
+$very-dark-gray:  #222222;
+$dark-gray:       #333333;
+$gray:            #777777;
+$light-gray:      #bbbbbb;
+$very-light-gray: #cccccc;
+$almost-white:    #eeeeee;
+$white:           #ffffff;
+
+// Colors
+$red:             #cc6666;
+$orange:          #de935f;
+$yellow:          #f0c674;
+$green:           #00ff00;
+$cyan:            #8abeb7;
+$blue:            #81a2be;
+$purple:          #aa00ff;
+$brown:           #a3685a;
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+// BACKGROUND COLORS
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Background of page
+$theme-background: invert-back-color($black);
+
+// Background of content boxes
+$theme-background-box: invert-back-color($very-dark-gray);
+
+// Toolbar background
+$theme-background-toolbar: invert-back-color($dark-gray);
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+// TEXT COLORS
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Text color
+$theme-text: invert-back-color($very-light-gray);
+$theme-text-faint: invert-back-color($light-gray);
+
+// Links color
+$theme-link: invert-back-color($green);
+$theme-link-visited: invert-back-color($purple);
+$theme-link-active: invert-back-color($yellow);
+
+// Special text colors
+$theme-url: invert-back-color($green);
+
+// Text highlights (e.g. selected row)
+$theme-highlighted: invert-back-color(darken($blue, 30%));
+$theme-highlighted-darker: lighten($theme-highlighted, 10%);
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+// UI COMPONENTS COLORS
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Primary buttons (usually originally blue)
+$theme-button-text: invert-back-color($dark-gray);
+$theme-button-background: invert-back-color($blue);
+
+// Secondary buttons (usually originally red / orange)
+$theme-secondary-button-background: invert-back-color(darken($orange, 10%));
+
+// Faint buttons (close to background color)
+$theme-faint-button-background: $theme-background-toolbar;
+
+// Textboxes, Textareas, Inputs
+$theme-textbox-text: invert-back-color($almost-white);
+$theme-textbox-background: invert-back-color($very-dark-gray);
+
+// Border color
+$theme-border: invert-back-color(rgba(255,255,255,0.15));
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+// TOOLTIP COLORS
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Tooltips (on hover)
+$theme-tooltip-background: invert-back-color($light-gray);
+$theme-tooltip-text: invert-back-color($dark-gray);
+
+// Notices (usually appearing in the top of page for few seconds after user action)
+$theme-notices: invert-back-color($orange);
